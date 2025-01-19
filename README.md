@@ -1,25 +1,53 @@
-@echo off
-REM Navigate to the project directory
-cd /d "C:\path\to\your\project"
+# Calculator
 
-REM Check if Python is installed
-python --version
-if %errorlevel% neq 0 (
-    echo Python is not installed or not found in PATH.
-    exit /b 1
-)
+This is a simple calculator application built using Python and Tkinter. The application allows users to perform basic arithmetic operations.
 
-REM Create a virtual environment
-python -m venv venv
+## Features
 
-REM Activate the virtual environment
-call venv\Scripts\activate
+- Basic arithmetic operations: addition, subtraction, multiplication, and division.
+- Clear button to reset the input.
+- Error handling for invalid expressions.
 
-REM Install required packages (if any)
-REM pip install -r requirements.txt
+## Requirements
 
-REM Run the Python application
-python Application.py
+- Python 3.x
 
-REM Deactivate the virtual environment (not needed in batch script)
-REM deactivate
+## Setup
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/Calculator.git
+    cd Calculator
+    ```
+
+2. Create a virtual environment:
+    ```sh
+    python -m venv venv
+    ```
+
+3. Activate the virtual environment:
+    - On Windows:
+        ```sh
+        venv\Scripts\activate
+        ```
+    - On macOS/Linux:
+        ```sh
+        source venv/bin/activate
+        ```
+
+4. Install the required packages (if any):
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## Running the Application
+
+1. Ensure the virtual environment is activated.
+2. Run the application:
+    ```sh
+    python Application.py
+    ```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
