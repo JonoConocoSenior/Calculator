@@ -1,53 +1,25 @@
-# Calculadora
+@echo off
+REM Navigate to the project directory
+cd /d "C:\path\to\your\project"
 
-Este é um aplicativo de calculadora simples construído usando Python e Tkinter. O aplicativo permite que os usuários realizem operações aritméticas básicas.
+REM Check if Python is installed
+python --version
+if %errorlevel% neq 0 (
+    echo Python is not installed or not found in PATH.
+    exit /b 1
+)
 
-## Funcionalidades
+REM Create a virtual environment
+python -m venv venv
 
-- Operações aritméticas básicas: adição, subtração, multiplicação e divisão.
-- Botão de limpar para redefinir a entrada.
-- Tratamento de erros para expressões inválidas.
+REM Activate the virtual environment
+call venv\Scripts\activate
 
-## Requisitos
+REM Install required packages (if any)
+REM pip install -r requirements.txt
 
-- Python 3.x
+REM Run the Python application
+python Application.py
 
-## Configuração
-
-1. Clone o repositório:
-    ```sh
-    git clone https://github.com/yourusername/Calculator.git
-    cd Calculator
-    ```
-
-2. Crie um ambiente virtual:
-    ```sh
-    python -m venv venv
-    ```
-
-3. Ative o ambiente virtual:
-    - No Windows:
-        ```sh
-        venv\Scripts\activate
-        ```
-    - No macOS/Linux:
-        ```sh
-        source venv/bin/activate
-        ```
-
-4. Instale os pacotes necessários (se houver):
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-## Executando o Aplicativo
-
-1. Certifique-se de que o ambiente virtual está ativado.
-2. Execute o aplicativo:
-    ```sh
-    python Application.py
-    ```
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+REM Deactivate the virtual environment (not needed in batch script)
+REM deactivate
