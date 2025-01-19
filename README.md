@@ -1,53 +1,53 @@
-# Calculator
+# Calculadora
 
-This is a simple calculator application built using Python and Tkinter. The application allows users to perform basic arithmetic operations.
+Este é um aplicativo de calculadora simples construído usando Python e Tkinter. O aplicativo permite que os usuários realizem operações aritméticas básicas.
 
-## Features
+## Funcionalidades
 
-- Basic arithmetic operations: addition, subtraction, multiplication, and division.
-- Clear button to reset the input.
-- Error handling for invalid expressions.
+- Operações aritméticas básicas: adição, subtração, multiplicação e divisão.
+- Botão de limpar para redefinir a entrada.
+- Tratamento de erros para expressões inválidas.
 
-## Requirements
+## Requisitos
 
 - Python 3.x
 
-## Setup
+## Configuração
 
-1. Clone the repository:
+1. Clone o repositório:
     ```sh
     git clone https://github.com/yourusername/Calculator.git
     cd Calculator
     ```
 
-2. Create a virtual environment:
+2. Crie um ambiente virtual:
     ```sh
     python -m venv venv
     ```
 
-3. Activate the virtual environment:
-    - On Windows:
+3. Ative o ambiente virtual:
+    - No Windows:
         ```sh
         venv\Scripts\activate
         ```
-    - On macOS/Linux:
+    - No macOS/Linux:
         ```sh
         source venv/bin/activate
         ```
 
-4. Install the required packages (if any):
+4. Instale os pacotes necessários (se houver):
     ```sh
     pip install -r requirements.txt
     ```
 
-## Running the Application
+## Executando o Aplicativo
 
-1. Ensure the virtual environment is activated.
-2. Run the application:
+1. Certifique-se de que o ambiente virtual está ativado.
+2. Execute o aplicativo:
     ```sh
     python Application.py
     ```
 
-## License
+## Licença
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
